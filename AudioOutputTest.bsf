@@ -1,0 +1,212 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 272 256)
+	(text "AudioOutputTest" (rect 5 0 72 12)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "rst" (rect 0 0 10 12)(font "Arial" ))
+		(text "rst" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 43 31 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "sw0" (rect 0 0 15 12)(font "Arial" ))
+		(text "sw0" (rect 21 59 36 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "sw1" (rect 0 0 14 12)(font "Arial" ))
+		(text "sw1" (rect 21 75 35 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "sw2" (rect 0 0 15 12)(font "Arial" ))
+		(text "sw2" (rect 21 91 36 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "sw3" (rect 0 0 15 12)(font "Arial" ))
+		(text "sw3" (rect 21 107 36 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "sw4" (rect 0 0 16 12)(font "Arial" ))
+		(text "sw4" (rect 21 123 37 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "sw5" (rect 0 0 15 12)(font "Arial" ))
+		(text "sw5" (rect 21 139 36 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "AUD_BCLK" (rect 0 0 54 12)(font "Arial" ))
+		(text "AUD_BCLK" (rect 21 155 75 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "AUD_DACLRCK" (rect 0 0 79 12)(font "Arial" ))
+		(text "AUD_DACLRCK" (rect 21 171 100 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "AUD_ADCDAT" (rect 0 0 71 12)(font "Arial" ))
+		(text "AUD_ADCDAT" (rect 21 187 92 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "AUD_ADCLRCK" (rect 0 0 79 12)(font "Arial" ))
+		(text "AUD_ADCLRCK" (rect 21 203 100 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "AUD_XCK" (rect 0 0 48 12)(font "Arial" ))
+		(text "AUD_XCK" (rect 187 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 1))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "AUD_DACDAT" (rect 0 0 71 12)(font "Arial" ))
+		(text "AUD_DACDAT" (rect 164 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48)(line_width 1))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "SDCLK" (rect 0 0 33 12)(font "Arial" ))
+		(text "SDCLK" (rect 202 75 235 87)(font "Arial" ))
+		(line (pt 256 80)(pt 240 80)(line_width 1))
+	)
+	(port
+		(pt 256 96)
+		(output)
+		(text "errorLED" (rect 0 0 40 12)(font "Arial" ))
+		(text "errorLED" (rect 195 91 235 103)(font "Arial" ))
+		(line (pt 256 96)(pt 240 96)(line_width 1))
+	)
+	(port
+		(pt 256 112)
+		(output)
+		(text "initSuccessLED" (rect 0 0 63 12)(font "Arial" ))
+		(text "initSuccessLED" (rect 172 107 235 119)(font "Arial" ))
+		(line (pt 256 112)(pt 240 112)(line_width 1))
+	)
+	(port
+		(pt 256 128)
+		(output)
+		(text "ss1[6..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "ss1[6..0]" (rect 202 123 235 135)(font "Arial" ))
+		(line (pt 256 128)(pt 240 128)(line_width 3))
+	)
+	(port
+		(pt 256 144)
+		(output)
+		(text "ss2[6..0]" (rect 0 0 34 12)(font "Arial" ))
+		(text "ss2[6..0]" (rect 201 139 235 151)(font "Arial" ))
+		(line (pt 256 144)(pt 240 144)(line_width 3))
+	)
+	(port
+		(pt 256 160)
+		(output)
+		(text "redLEDs[15..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "redLEDs[15..0]" (rect 174 155 235 167)(font "Arial" ))
+		(line (pt 256 160)(pt 240 160)(line_width 3))
+	)
+	(port
+		(pt 256 64)
+		(bidir)
+		(text "SDAT" (rect 0 0 27 12)(font "Arial" ))
+		(text "SDAT" (rect 208 59 235 71)(font "Arial" ))
+		(line (pt 256 64)(pt 240 64)(line_width 1))
+	)
+	(parameter
+		"START"
+		"0000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"INIT"
+		"0001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAITBYPASSSWITCHON"
+		"0010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAITBYPASSON"
+		"0011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAITBYPASSSWITCHOFF"
+		"0100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAITBYPASSOFF"
+		"0101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ERRORSTATE"
+		"1001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 240 224)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 272 -64 372 16))
+)
